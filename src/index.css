@@ -1,0 +1,12 @@
+body {
+  /* Ficou feio demais, tente pesquisar melhor sobre design de sites */
+  background: linear-gradient(
+  90deg,
+  #f5dd9d 0%,
+  #bcc499 45%,
+  #506266 100%
+  );
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
