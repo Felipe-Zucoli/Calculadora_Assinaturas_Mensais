@@ -14,7 +14,7 @@
   font-family: Arial;
   font-weight: bolder;
   display: flex;
-  justify-content: start;
-  padding-left: 315px;
+  justify-content: center;
+  padding-right: 45px;
   margin-top: 25px;
 }

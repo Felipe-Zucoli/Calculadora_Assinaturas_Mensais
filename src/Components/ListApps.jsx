@@ -33,9 +33,14 @@ const ListApps = () => {
             </form>
         )}
         {SelectedValor &&(
-            <button onClick={() => alert(`Aplicativos: ${selectedApp}, Valor: ${SelectedValor}`)}>
-                Confirmar 
+            <>
+            <button onClick={() => alert(`Aplicativos: ${selectedApp}, Valor: ${SelectedValor}`)} className="buttonAdd">
+                Adicionar valor a lista
             </button> 
+            <button onClick={() => alert(`Aplicativos: ${selectedApp}, Valor: ${SelectedValor}`)} className="buttonFinalize">
+                Adicionar valor a lista e finalizar
+            </button> 
+            </>
         )}
     </div>
 )
