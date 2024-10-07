@@ -1,18 +1,19 @@
+/* Reciclado do ListApps, preferi criar um novo com os mesmos parametros, para ficar de fácil entendimento */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container {
+.containerValores {
     display: grid;
     justify-content: start;
     padding-left: 315px;
     margin-top: 20px;
 }
 
-.container form select {
-    width: 290%;
+.containerValores form select {
+    width: 283%;
     height: 55%;
     padding: 5px 0;
     margin: 15px 0 20px;
@@ -23,6 +24,6 @@
     outline: none;
 }
 
-.container form select:focus-visible {
+.containerValores form select:focus-visible {
     outline: dotted rgba(255, 255, 255, 0.4);
 }

@@ -13,4 +13,4 @@ const ListApps = () => {
 )
 }
 
-export default ListApps
+export default ListApps;
