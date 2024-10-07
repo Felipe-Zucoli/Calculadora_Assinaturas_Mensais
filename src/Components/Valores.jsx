@@ -1,16 +1,19 @@
 import Aplicativos from "./Aplicativos";
 
-const Valores = () => {
+const Valores = ({selectedApp, handleValorChange}) => {
+    const appDetails = Aplicativos[selectedApp];
     return (
-        <select id="aplicativos">
+        <select id="valores" onChange={handleValorChange}>
         <option value="">Selecione o valor da assinatura</option>
-        {Object.keys(Aplicativos).map((appKey) => (
-            <option key={appKey} value={Aplicativos[appKey].valorPad}>
-                {Aplicativos[appKey].valorPad}
-            </option>
-        ))}
+        {appDetails &&(
+            <>
+            <option value={appDetails.valorBar}>Básico: R${appDetails.valorBar}</option>
+            <option value={appDetails.valorPad}>Padrão: R${appDetails.valorPad}</option>
+            <option value={appDetails.valorPre}>Premium: R${appDetails.valorPre}</option>
+            </>
+        )}
     </select>
-    )
-}
+    );
+};
 
 export default Valores;

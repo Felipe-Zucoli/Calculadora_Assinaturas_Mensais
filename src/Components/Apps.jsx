@@ -1,11 +1,11 @@
 import Aplicativos from "./Aplicativos";
 
-const Apps = () => {
+const Apps = ({handleAppChange}) => {
     return (
-    <select id="aplicativos">
-        <option value="">Selecione os aplicativos</option>
+    <select id="aplicativos" onChange={handleAppChange}>
+        <option value="">Selecione um aplicativo</option>
         {Object.keys(Aplicativos).map((appKey) => (
-            <option key={appKey} value={Aplicativos[appKey].nome}>
+            <option key={appKey} value={[appKey]}>
                 {Aplicativos[appKey].nome}
             </option>
         ))}

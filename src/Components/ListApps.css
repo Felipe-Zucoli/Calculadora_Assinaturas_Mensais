@@ -8,12 +8,12 @@
     display: grid;
     justify-content: start;
     padding-left: 315px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .container form select {
     width: 290%;
-    height: 55%;
+    height: 45%;
     padding: 5px 0;
     margin: 15px 0 20px;
     border: solid 1px rgba(255, 255, 255, 0.2); 
@@ -26,3 +26,4 @@
 .container form select:focus-visible {
     outline: dotted rgba(255, 255, 255, 0.4);
 }
+
