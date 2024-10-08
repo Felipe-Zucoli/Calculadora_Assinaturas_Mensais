@@ -10,6 +10,14 @@
     margin-top: 30px;
 }
 
+.layoutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+
 .container form select {
     width: 100%;
     height: 45%;
@@ -50,3 +58,4 @@
 .buttonFinalize:hover {
     transform: translateY(5px);
 }
+

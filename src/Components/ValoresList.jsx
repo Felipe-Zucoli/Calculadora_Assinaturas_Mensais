@@ -8,7 +8,7 @@ const ValoresList = ({valores}) => {
     };
     return (
         <div className="containerListFinal">
-            <h2 className="TextValFim">Valores Adicionados</h2>
+            <h2 className="TextValFim">Valores e planos</h2>
             <ul>
                 {valores.map((item, index)=>(
                     <li key={index}>

@@ -1,0 +1,12 @@
+
+.graficoContainer {
+    display: inline;
+    justify-content: end;
+    margin-top: 55px;
+    margin-left: 35px;
+}
+
+
+.graficoPizza {
+    size: 0px;
+}

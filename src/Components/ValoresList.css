@@ -1,10 +1,12 @@
 .containerListFinal {
     box-sizing: border-box;
     margin: 0 auto;
+    margin-left: 0px;
 }
 
 .TextValFim {
     margin-top: 55px;
+    
 }
 
 ul {

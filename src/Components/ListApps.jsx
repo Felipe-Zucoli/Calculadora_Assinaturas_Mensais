@@ -49,8 +49,10 @@ const ListApps = () => {
             </button>  
             
         )}
-        {valores.length > 0 && < ValoresList valores={valores}/>}
-        {valores.length > 0 && <PizzaGrafico valores={valores}/>} 
+        <div className="layoutContainer">
+            {valores.length > 0 && < ValoresList valores={valores}/>}
+            {valores.length > 0 && <PizzaGrafico valores={valores}/>}
+        </div> 
     </div>
 )
 }

@@ -12,6 +12,20 @@ const Aplicativos = {
         valorPad: 29.90.toFixed(2),
         valorPre: 39.90.toFixed(2),
         cor: '#7A6BE2'
+    },
+    Crunchyroll: {
+        nome: "Crunchyroll",
+        valorBar: 14.99.toFixed(2),
+        valorPad: 19.99.toFixed(2),
+        valorPre: 199.99.toFixed(2),
+        cor: '#FFA500'
+    },
+    GamePass: {
+        nome: "Xbox Game Pass",
+        valorBar: 35.99.toFixed(2),
+        valorPad: 59.90.toFixed(2),
+        valorPre:null,
+        cor: '#008000'
     }
 }
 
