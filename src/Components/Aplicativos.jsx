@@ -24,7 +24,7 @@ const Aplicativos = {
         nome: "Xbox Game Pass",
         valorBar: 35.99.toFixed(2),
         valorPad: 59.90.toFixed(2),
-        valorPre:null,
+        valorPre: 59.90.toFixed(2),
         cor: '#008000'
     }
 }
