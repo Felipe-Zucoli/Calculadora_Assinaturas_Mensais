@@ -2,14 +2,16 @@ import { useState } from "react";
 import Apps from "./Apps";
 import Valores from "./Valores";
 import './ListApps.css';
-
+import ValoresList from "./ValoresList";
+import PizzaGrafico from "./GraficoPizza";
 /* Fazer alteração na nomenclatura da div classname Body, usar container */
 /* Fazer uma lista com todos os aplicativos */
 /* Alterações Feitas */
 
 const ListApps = () => {
     const [selectedApp, setSelectedApp] = useState("");
-    const [SelectedValor, setSelectedValor] = useState("");
+    const [selectedValor, setSelectedValor] = useState("");
+    const [valores, setValores] = useState([]);
 
     const handleAppChange = (event) =>{
         setSelectedApp(event.target.value);
@@ -20,11 +22,19 @@ const ListApps = () => {
         setSelectedValor(event.target.value);
     }
     
+    const handleAddValue = () =>{
+        if (selectedApp && selectedValor) {
+            setValores(prev =>[...prev,{ app:selectedApp ,valor:selectedValor}]);
+            setSelectedApp("");
+            setSelectedValor("");
+        }
+    }
+
     return (
     <div className="container"> 
         <form>
             <label htmlFor="aplicativos">Aplicativos:</label>
-            <Apps handleAppChange={handleAppChange}/>
+            <Apps handleAppChange={handleAppChange} selectedApp={selectedApp}/>
         </form>
         {selectedApp && (
             <form>
@@ -32,16 +42,15 @@ const ListApps = () => {
             <Valores selectedApp={selectedApp} handleValorChange={handleValorChange}/>
             </form>
         )}
-        {SelectedValor &&(
-            <>
-            <button onClick={() => alert(`Aplicativos: ${selectedApp}, Valor: ${SelectedValor}`)} className="buttonAdd">
+        {selectedValor &&(
+            
+            <button onClick={handleAddValue} className="buttonAdd">
                 Adicionar valor a lista
-            </button> 
-            <button onClick={() => alert(`Aplicativos: ${selectedApp}, Valor: ${SelectedValor}`)} className="buttonFinalize">
-                Adicionar valor a lista e finalizar
-            </button> 
-            </>
+            </button>  
+            
         )}
+        {valores.length > 0 && < ValoresList valores={valores}/>}
+        {valores.length > 0 && <PizzaGrafico valores={valores}/>} 
     </div>
 )
 }

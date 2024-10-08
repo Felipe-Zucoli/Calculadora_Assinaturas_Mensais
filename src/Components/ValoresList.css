@@ -1,0 +1,21 @@
+.containerListFinal {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.TextValFim {
+    margin-top: 55px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+    border-style:solid ;
+}
+
+li {
+    color: black;
+    border-bottom: solid;
+    border-color: black;
+    margin-top: 5px;
+}
